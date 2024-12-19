@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	color: #313537;
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	display: flex;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 30pt;
+}
+
+h2 {
+	color: #007cad;
+	font-weight: bold;
+	font-size: 24pt;
+}
+
+h3 {
+	color: #007cad;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+h4 {
+	color: black;
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+ul {
+	line-height: 2;
+}
+
+.side-menu {
+	width: 250px;
+	background-color: #f4f4f4;
+	padding: 10px 0;
+	border-right: 1px solid #ccc;
+	height: 100vh;
+}
+.side-menu ul {
+	list-style-type: none;
+	line-hright: normal;
+	padding: 0;
+	margin: 0;
+}
+
+.side-menu li {
+	padding: 15px 20px;
+	cursor: pointer;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+	transition: background-color 0.3s ease;
+}
+
+.side-menu li:hover {
+	background-color: #007cad;
+	color: white;
+}
+
+.side-menu li.active {
+	background-color: #007cad;
+	color: white;
+}
+
+.content {
+	flex: 1;
+	padding: 20px;
+}
