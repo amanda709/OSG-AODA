@@ -1,4 +1,5 @@
 // JavaScript Document
+
 function loadMenu(menuFilePath, targetElementId) {
     fetch(menuFilePath)
         .then(response => {
