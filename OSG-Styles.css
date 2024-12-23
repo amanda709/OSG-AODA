@@ -13,6 +13,7 @@ body {
 	line-height: 2;
 	margin: 0;
 	display: flex;
+	overflow-x: hidden;
 }
 
 .content h1 {
@@ -72,14 +73,25 @@ body {
 		color: white;
 	}
 
+.left-image {
+	width: 50%;
+	float: left;	
+}
+
+.image-text {
+	padding: 150px;
+}
+
 .banner {
 	margin: -15px;
+	overflow-x: hidden;
 }
 
 .side-menu {
 	width: 250px;
+	font-size: 12pt;
 	background-color: #f4f4f4;
-	padding: 10px;
+	padding: 15px;
 	border-right: 1px solid #ddd;
 	height: 100vh;
 	position: fixed;
