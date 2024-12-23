@@ -40,18 +40,24 @@ body {
 }
 
 .section-white {
-	padding: 30px;
+	padding: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .section-grey {
 	background-color: #ececec;
-	padding: 50px;
+	padding: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .section-blue {
 	background-color: #007cad;
 	color: white;
-	padding: 50px;
+	padding: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 	.section-blue h2 {
