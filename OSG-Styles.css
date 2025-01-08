@@ -2,7 +2,6 @@
 /* CSS Document */
 
 .content {
-	width: 90%;
 	margin-left: 270px;
 }
 
@@ -10,7 +9,6 @@ body {
 	color: #313537;
 	font-family: Arial, sans-serif;
 	font-size: 14pt;
-	line-height: 2;
 	margin: 0;
 	display: flex;
 	overflow-x: hidden;
@@ -20,6 +18,7 @@ body {
 	text-align: center;
 	font-weight: bold;
 	font-size: 30pt;
+	padding-bottom: 30pt;
 }
 
 .content h2 {
@@ -40,25 +39,29 @@ body {
 	font-size: 16pt;
 }
 
+.content p {
+	line-height: 2;
+}
+
 .section-white {
-	padding: 100px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 15%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .section-grey {
 	background-color: #ececec;
-	padding: 100px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 15%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .section-blue {
 	background-color: #007cad;
 	color: white;
-	padding: 100px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 15%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 	.section-blue h2 {
@@ -73,18 +76,86 @@ body {
 		color: white;
 	}
 
+.statement {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 2;
+	padding-left: 20%;
+	padding-right: 20%
+}
+
 .left-image {
 	width: 50%;
 	float: left;	
 }
 
 .image-text {
-	padding: 150px;
+	padding: 5%;
 }
 
 .banner {
-	margin: -15px;
-	overflow-x: hidden;
+	margin-bottom: -1%;
+}
+
+.accordion {
+   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: block;
+  background-color: white;
+  border: solid;
+  border-width: thin;	
+  border-color: #eee;
+  border-left-width: medium;
+  color: #313517;
+  cursor: pointer;
+  padding: 24px;
+  margin: auto;
+  width: 80%;
+  text-align: left;
+  font-size: 14pt;
+  font-weight: bold;
+  transition: 0.4s;
+ 
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+	border-left-color: #007cad;
+	border-bottom-color: white;
+}
+
+.accordion:hover {
+  background-color: #007cad;
+  color: white;	
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 10pt;
+  color: #313537;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 24px;
+  background-color: white;
+  border: solid white;
+  border-width: thin;
+  border-left-width: medium;
+  border-left-color: #007cad;	
+  margin: auto;
+  width: 80%;
+  display: none;
+  overflow: hidden;	
+
+	
 }
 
 .side-menu {
@@ -100,34 +171,34 @@ body {
     overflow-y: auto;
 }
 
-.side-menu ul {
-	list-style-type: none;
-	line-height: normal;
-	padding: 0;
-	margin: 0;
-}
+	.side-menu ul {
+		list-style-type: none;
+		line-height: normal;
+		padding: 0;
+		margin: 0;
+	}
 
-.side-menu li {
-	padding: 15px 20px;
-	cursor: pointer;
-	color: #313537;
-	border-bottom: 1px solid #ddd;
-	transition: background-color 0.3s ease;
-}
+	.side-menu li {
+		padding: 15px 20px;
+		cursor: pointer;
+		color: #313537;
+		border-bottom: 1px solid #ddd;
+		transition: background-color 0.3s ease;
+	}
 
-.side-menu li a {
-    text-decoration: none;
-    color: #313537;
-    display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+	.side-menu li a {
+		text-decoration: none;
+		color: #313537;
+		display: block;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
 
-.side-menu li:hover {
-	background-color: #007cad;
-	color: white;
-}
+	.side-menu li:hover {
+		background-color: #007cad;
+		color: white;
+	}
 
-.side-menu li.active {
-	background-color: #007cad;
-	color: white;
-}
+	.side-menu li.active {
+		background-color: #007cad;
+		color: white;
+	}
