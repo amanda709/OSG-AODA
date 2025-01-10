@@ -43,6 +43,18 @@ body {
 	line-height: 2;
 }
 
+.content ol {
+	list-style-type: lower-alpha;
+}
+
+.content li {
+	line-height: 1.25;
+}
+
+li + li {
+	margin-top: 10px;
+}
+
 .section-white {
 	padding: 15%;
 	padding-top: 5%;
@@ -97,8 +109,26 @@ body {
 	margin-bottom: -1%;
 }
 
+.continue {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: block;
+  background-color: #007cad;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 2%;
+  margin: auto;
+  margin-top: 5%;	
+  width: 80%;
+  text-align: center;
+  font-size: 12pt;
+  letter-spacing: 1pt;
+}
+
 .accordion {
-   -moz-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   display: block;
@@ -109,7 +139,7 @@ body {
   border-left-width: medium;
   color: #313517;
   cursor: pointer;
-  padding: 24px;
+  padding: 3%;
   margin: auto;
   width: 80%;
   text-align: left;
@@ -144,18 +174,20 @@ body {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 24px;
+  padding: 2% 5% 2% 5%;
   background-color: white;
   border: solid white;
   border-width: thin;
   border-left-width: medium;
   border-left-color: #007cad;	
   margin: auto;
-  width: 80%;
+  width: 76%;
   display: none;
   overflow: hidden;	
+}
 
-	
+.panel p {
+	line-height: 1.25;
 }
 
 .side-menu {
